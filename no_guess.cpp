@@ -19,9 +19,9 @@ int main() {
         cin >> guess;
         attempts++;
         if (guess < secretNumber) {
-            cout << "Too low! Try again.\n";
+            cout << " low! Try again.\n";
         } else if (guess > secretNumber) {
-            cout << "Too high! Try again.\n";
+            cout << " high! Try again.\n";
         } else {
             cout << "Congratulations! You guessed the correct number in " << attempts << " attempts.\n";
         }
@@ -30,3 +30,26 @@ int main() {
 
     return 0;
 }
+
+
+//OUTPUT
+/*Welcome to the Guess the Number Game!
+Try to guess the number between 1 and 100.
+Enter your guess: 15
+ low! Try again.
+Enter your guess: 25
+ low! Try again.
+Enter your guess: 35
+ low! Try again.
+Enter your guess: 55
+ low! Try again.
+Enter your guess: 61
+ low! Try again.
+Enter your guess: 75
+ high! Try again.
+Enter your guess: 70
+ high! Try again.
+Enter your guess: 65
+ low! Try again.
+Enter your guess: 68
+Congratulations! You guessed the correct number in 9 attempts.*/
